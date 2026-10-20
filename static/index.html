@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nearest Tracks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Nearest Tracks</h1>
+    <p class="lede">Pick a song and get ten that sound like it, each from a different artist.</p>
+
+    <div class="search">
+      <input id="q" type="search" role="combobox" aria-expanded="false" aria-controls="options" aria-autocomplete="list"
+        autocomplete="off" placeholder="Search by song or artist" aria-label="Search by song or artist">
+      <ul id="options" class="options" role="listbox" hidden></ul>
+    </div>
+    <p id="status" class="status" role="status"></p>
+    <div id="out"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
